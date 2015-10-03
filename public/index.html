@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" class="no-js" ng-app="abelApp">
 
   <head>
     <meta charset="utf-8">
@@ -22,21 +22,35 @@
     <!--<link rel="stylesheet" href="/assets/css/style.min.css"> -->
     <!-- Nav Bar Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
+    
+    <!-- <script src="js/app.js"></script>-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Angular JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="assets/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+ 
 
-   </head>
-   <body>
+
+    <!-- Async-sourced local JS modules -->
+    <script src="js/app.js"></script>
+    <script src="js/aboutmeController.js"></script>
+  </head>
+  <body>
       <!-- My fixed navigation bar -->
    <header>
        <nav class="navbar navbar-default navbar-fixed-top">
          <div class="container">
            <div class="navbar-collapse collapse"> <!-- media query for resize -->
               <ul class="nav nav-justified">
-                <li><a href="#">ABOUT ME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">RESUME</a></li>
-                <li><a href="#">RESOURCES</a></li>
-                <li><a href="#">CONTACT</a></li>
-               </ul>
+                <li><a ui-sref="/aboutme">ABOUT</a></li>
+                <li><a ui-sref="/portfolio">PORTFOLIO</a></li>
+                <li><a ui-sref="/resume">RESUME</a></li>
+                <li><a ui-sref="/resources">RESOURCES</a></li>
+                <li><a ui-sref="/contact">CONTACT</a></li>
+                <li><a ui-sref="/home">HOME</a></li>
+              <!-- <a class="item" ui-sref="/contact">CONTACT</a> -->
+              </ul>
             </div>
          </div>
 
@@ -56,42 +70,23 @@
      
 
  
-        <div class="container" ng-init="title='Angular';
-        dope=true;">
+
        
-         <h2>{{ title }} is Dope: {{dope}}</h2>
-
-          <input type="text"
-                 placeholder="type here"
-                 class="form-control"
-                 ng-model="title"/>
-
-
-          <p>
-           <a class="btn btn-primary btn-lg">Push</a>
-          </p>
-       </div>
       </div>
 
 
 
         <footer>
            <div class="col-md-4">
-            <i class="fa fa-database fa-3x"></i> Runs on MongoDB
+           <!--  <i class="fa fa-database fa-3x"></i> Runs on MongoDB -->
           </div>  
         </footer>
     
 
     </div><!-- #container -->
-
-<!-- Angular JS-->
-<script src="assets/libs/angular/angular.min.js"></script>
 <!-- Angular Auto Validate-->
 <script src="/assets/libs/angular-auto-validate/dist/jcs-auto-validate.min.js"></script>
-<!-- <script src="js/app.js"></script>-->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-  <!-- LADDA SCRIPTS -->
+<!-- LADDA SCRIPTS -->
 <script src="/assets/libs/ladda/dist/spin.min.js"></script>
 <script src="/assets/libs/ladda/dist/ladda.min.js"></script>
 <script src="/assets/libs/angular-ladda/dist/angular-ladda.min.js"></script>
