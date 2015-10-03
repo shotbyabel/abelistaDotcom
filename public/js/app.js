@@ -18,6 +18,7 @@ angular.module( 'abelApp', ['ui.router'])
         
       })
 
+
       .state('/contact', {
         url:            '/contact',
         templateUrl:    'templates/contact.html',

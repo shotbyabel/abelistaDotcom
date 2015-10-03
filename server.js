@@ -11,7 +11,7 @@ var express      = require('express'),
 
 //Mongo running check
 require('net').connect(27017, 'locahost').on('error', function(){
-  console.log("He's name is Mongo and we kept him in a cage!");
+  console.log("He's name is MongoDB live from port 27017");
   process.exit(0);
 
 });
