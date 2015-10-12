@@ -14,7 +14,7 @@ require('net').connect(27017, 'locahost').on('error', function(){
   console.log("He's name is MongoDB live from port 27017");
 //   process.exit(0);
 
-// });
+});
 
 //loading routes defined in /routes folder
 var routes    = require('./routes/index');
@@ -78,3 +78,5 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+

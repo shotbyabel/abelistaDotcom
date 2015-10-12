@@ -1,7 +1,7 @@
 (function() {
  'use strict';
 
- angular.module( 'abelApp')
+ angular.module('abelApp')
   .controller('AboutmeController', AboutmeController);
 
   function AboutmeController() {

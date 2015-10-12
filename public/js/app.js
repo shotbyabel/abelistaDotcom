@@ -18,6 +18,14 @@ angular.module( 'abelApp', ['ui.router'])
         
       })
 
+      .state('/portfolio', {
+        url:            '/portfolio',
+        templateUrl:    'templates/portfolio.html',
+        controller:     'PortfolioController',
+        controllerAs:   'vm'
+      
+      })
+
 
       .state('/contact', {
         url:            '/contact',
@@ -27,14 +35,6 @@ angular.module( 'abelApp', ['ui.router'])
       
       })
 
-
-      .state('/portfolio', {
-        url:            '/portfolio',
-        templateUrl:    'templates/portfolio.html',
-        controller:     'PortfolioController',
-        controllerAs:   'vm'
-      
-      })
 
       .state('/resources', {
         url:            '/resources',
