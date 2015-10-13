@@ -66,6 +66,14 @@ text-shadow: 3px 1px 2px black;
 
 }
 
+#abel{
+  font-size: 3.5em;
+}
+
+#fswd{
+  font-size: 2.50em;
+}
+
 p#mybio {
   font-size: 1.25em;
 
@@ -74,6 +82,7 @@ p#mybio {
 
 .aboutme-intro{
 font-family: 'Coda Caption', 'Trebuchet MS', 'Tahoma';
+text-align: center;
 
 }
 
@@ -87,29 +96,116 @@ font-family: 'Coda Caption', 'Trebuchet MS', 'Tahoma';
 #willing{
   display: none;
   position: absolute;
-  right:175px; 
+  right:-140px; 
   top:60px;
 
 }
 #and{
-  display: none;
-  /*position: absolute;*/
-  text-align: center;
-  top:80px;
+/*  display: none;*/
+  position: absolute;
+/*  text-align: center;*/
+  left:-1150px; 
+  top:60px;
 
 }
 #abel{
   display: none;
   position: absolute;
-  left:100px; 
-  top:100px;
+  left:-125px; 
+  top:90px;
 
 }
 #fswd{
   display: none;
   position: absolute;
   left:30%; 
-  top:-60px;
+  top:-140px;
+
+}
+
+/*FRONT END and BACK END CIRCLES*/
+
+.fe-circle{
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: white;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit- border-radius: 50%;
+  margin: 0 auto ;
+}
+
+.be-circle{
+    width: 100%;
+  padding-bottom: 100%;
+  background-color: white;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit- border-radius: 50%;
+  margin: 0 auto ;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 100px) and (max-width: 668px){
+
+    #mobile{
+   position: static;   
+   font-size: 8px;
+  /* color: green;*/
+   text-align: center;
+
+    }
+
+  #fswd{
+  left:0%; 
+
+    }
+
+  #abel{
+  top:18%;
+
+  }
+
+}
+
+@media only screen and (min-width: 669px) and (max-width: 795px){
+
+  #mobile{
+
+  font-size: 10px;
+/*display: block;/*
+/**color: red;*/
+  text-align: center;
+
+
+  }
+
+  #abel{
+    top:17%;
+}
+
+  #fswd{
+  left:15%; 
+
+  }
+
+}
+
+@media only screen and (min-width: 796px) and (max-width: 946px){
+
+    #mobile{
+    text-align: center;  
+    font-size: 12px;
+    /*display: block;
+/*    color: blue;*/
+    
+    left: 15%; 
+
+  }
 
 }
 
