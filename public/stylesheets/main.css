@@ -1,14 +1,28 @@
 /*MY CUSTOM STYLES*/
 
+
 body {
-background-color: red;  
+background-color: black;
+color: white;  
+}
+
+body > section {
+  clear: both;
+}
+
+.voffset2 { margin-top: 20px; }
+.voffset5 { margin-top: 50px; }
+
+section#slider img {
+  margin: 0 auto;
 }
 
 .navbar-default {
+  opacity: 0.85;
   box-shadow: none;
-  background-color: white;
+  background-color: transparent;
   border:none;
-  min-height: 90px;
+  min-height: 40px;
   padding-top: 20px;
   padding: 0px 15px;
 
@@ -31,7 +45,10 @@ background-color: red;
 .nav>li>a:hover,
 .nav>li>a:focus {
 
-background-color: transparent;
+background-color: white;
+text-shadow: 3px 1px 2px black;
+-webkit-text-shadow: 3px 1px 2px black;
+-moz-text-shadow: 3px 1px 2px black;
 
 }
 
@@ -39,10 +56,19 @@ h2 {
 
  font-family: 'Coda', 'Trebuchet MS', 'Tahoma';
  text-transform: uppercase;
- color: blue;
+ color: green;
  font-size: 2.0em;
 /* text-shadow: 1px 1px 1px black;
  -webkit-text-shadow: 1px 1px 1px black;
  -moz-text-shadow: 1px 1px 1px black;*/
 
 }
+
+p#mybio {
+  font-size: 1.25em;
+
+
+}
+
+
+
