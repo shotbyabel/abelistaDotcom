@@ -2,9 +2,9 @@
  'use strict';
 
  angular.module( 'abelApp')
-  .controller('ResourcesController', ResourcesController);
+  .controller('DownloadController', DownloadController);
 
-  function ResourcesController() {
+  function DownloadController() {
     var vm = this;
 
     vm.about = function() {

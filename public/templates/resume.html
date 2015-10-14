@@ -1,18 +1,31 @@
 
     <!-- my update style sheet -->
+    
     <link rel="stylesheet" href="stylesheets/main.css">
+        <script src="assets/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/downlController.js"></script>
     <script src="/assets/libs/greensock-js/src/minified/TweenMax.min.js"></script>
+    
 
 <div class="container">
 
-<div><h3>About Me</h3></div>
-  <p>I first developed a passion for programming while taking a part-time web development course.  The realization that I could contribute the knowledge and experience I gained from twelve years in the Entertainment industry to the tech world and create new services and products that would positively impact people’s lives motivated me to dive into web development full-time.  Having spent 600+ hours in the last 3 months building web applications, I am confident that my combination of creative and technical skills will contribute positively to your team.</p>
+<div class="row voffset7">
+  <p class="myabouts">I first developed a passion for programming while taking a part-time web development course.  The realization that I could contribute the knowledge and experience I gained from twelve years in the Entertainment industry to the tech world and create new services and products that would positively impact people’s lives motivated me to dive into web development full-time.  Having spent 600+ hours in the last 3 months building web applications, I am confident that my combination of creative and technical skills will contribute positively to your team.</p>
+</div>
+
+<div class="text-center">
+
+<a ui-sref="/download" class="btn btn-primary">Download Resume</a>
+</div>
+
+
 
 
   <div class="row voffset-130">
     <div class="col-sm-6">
-      <div class="fe-circle">
+      <div class="stacks1">
         <div>
           <img id="mean" src="/img/mean.png">
           <img id="rails" src="/img/rails.png">
@@ -22,7 +35,7 @@
      </div>
 
    <div class="col-sm-6">
-     <div class="be-circle">
+     <div class="stacks2">
        <div>
          <img id="frontEnd" src="/img/frontEnd.png">
          <img id="angular" src="/img/angular.png">
@@ -34,22 +47,30 @@
     </div>  
   </div>
 
-<div><h3>Web Development Skills</h3></div>
-  <div class="row" style="background-color:lightblue;">
-   <div class="col-sm-6 col-md-3 col-lg-4">
-     <h3>Front End</h3> 
-       <p>Angular JS, Ionic Mobile apps, html5, CSS3, jQuery ,JavaScript, Bootstrap, Materialize, Semantic UI</p>
-   </div>
 
-   <div class="col-sm-6 col-md-9 col-lg-8">
-     <h3>Back End</h3> 
-       <p>Express JS, Node JS, MongoDB, Ruby on Rails, PostgreSQL</p>
-   </div>    
-  </div> 
+<!-- RESUME FRONT END AND BACK END CIRCLES -->
 
 
-<div><h3>Other Skills</h3></div>
-  <div class="row" style="background-color:lightgrey;">
+
+    <div class="my-titles text-center voffset7"><h3>Web Development Skills</h3></div>
+      
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6">
+        <div class="fe-bubble">
+        <img id="feBubble" src="/img/feBubble.png">
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-6">
+      <div class="be-bubble">
+        <img id="beBubble" src="/img/beBubble.png">
+        </div>
+      </div>
+    </div>  
+
+
+<div class="my-titles text-center voffset7"><h3>Other Skills</h3></div>
+  <div class="row voffset7">
     <div class="col-sm-4">
       <p>
       <h4>Photography & Video:</h4> Adobe Premiere & Photoshop, Canon 5D full frame Camera, Canon Lens and flash/lights remote accessories.
@@ -71,9 +92,9 @@
 
 
 
-  <div><h3>Web Development Projects</h3></div>
+  <div class="my-titles text-center voffset7"><h3>Web Development Projects</h3></div>
 
-  <div class="row" style="background-color:lightgreen;">
+  <div class="row">
     <div class="col-sm-4">
       <h4>Levy Entertainment</h4>
       <h5>Technical & Design Consultant</h5>                  
@@ -95,8 +116,8 @@
 
   
 
-  <div><h3>Professional Experience</h3></div>
-  <div class="row" style="background-color:lightblue;">
+  <div class="my-titles text-center voffset7"><h3>Professional Experience</h3></div>
+  <div class="row">
   <div class="col-sm-12">
   <div><h4>Capital Audio & Royal Z Entertainment</h4></div>
   <div><h5>Office & Client account Coordinator</h5></div>         
@@ -110,7 +131,7 @@
   </div>
   </div>
 
-  <div class="row" style="background-color:lightgrey;">
+  <div class="row">
   <div class="col-sm-12">
   <div><h4>Viva Vision! </h4></div>
   <div><h5>Post Production Assistant & Spanish Linguist</h5></div>          
@@ -125,9 +146,9 @@
   </div>
 
 
-  <div><h3>Education</h3></div>
+  <div class="my-titles text-center voffset7"><h3>Education</h3></div>
 
-    <div class="row" style="background-color:lightgreen;">
+    <div class="row">
      <div class="col-sm-6">
       <h4>GENERAL ASSEMBLY</h4>
        <p>Web Development Immersive Program & Front End Development</p>

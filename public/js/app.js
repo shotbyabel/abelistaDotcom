@@ -3,11 +3,11 @@
   'use strict';
 
 angular.module( 'abelApp', ['ui.router'])
-  .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
+  .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider, $rootScope, $state, $stateParams){
     $stateProvider
-      .state('/home', {
-        url:          '/home',
-        templateUrl:  'templates/home.html'
+      .state('/about', {
+        url:          '/about',
+        templateUrl:  'templates/about.html'
       })
 
 .state('/aboutme', {
@@ -36,10 +36,10 @@ angular.module( 'abelApp', ['ui.router'])
       })
 
 
-      .state('/resources', {
-        url:            '/resources',
-        templateUrl:    'templates/resources.html',
-        controller:     'ResourcesController',
+      .state('/download', {
+        url:            '/download',
+        templateUrl:    'templates/download.html',
+        controller:     'DownloadController',
         controllerAs:   'vm'
       
       })       
@@ -52,7 +52,7 @@ angular.module( 'abelApp', ['ui.router'])
       
       });
 
-      $urlRouterProvider.otherwise('/home'); 
+      $urlRouterProvider.otherwise('/about'); 
     
   }])
 

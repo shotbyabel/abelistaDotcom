@@ -12,6 +12,7 @@ body > section {
 
 .voffset2 { margin-top: 20px; }
 .voffset5 { margin-top: 50px; }
+.voffset7 { margin-top: 70px; }
 .voffset15 { margin-top: 150px; }
 .voffset20 { margin-top: 200px; }
 .voffset-130 { margin-top: -130px; }
@@ -115,7 +116,7 @@ text-align: center;
 #abel{
   display: none;
   position: absolute;
-  left:-125px; 
+  left:-145px; 
   top:90px;
 
 }
@@ -129,17 +130,7 @@ text-align: center;
 
 /*FRONT END and BACK END CIRCLES*/
 
-.fe-circle{
-/*  width: 100%;
-  padding-bottom: 100%;
-  background-color: black;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit- border-radius: 50%;
-  margin: 0 auto ;*/
-}
-
-.fe-circle div{
+.stacks1 div{
   float: left;
   width: 100%;
   padding-top: 45%;
@@ -167,18 +158,8 @@ img#postgres {
   margin-top: -0.5em;
 }
 
-.be-circle{
-/*  width: 100%;
-  padding-bottom: 100%;
-  background-color: black;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit- border-radius: 50%;
-  margin: 0 auto ;*/
-}
-
-
-.be-circle div{
+/*DEV STACKS ANIMATIONS*/
+.stacks2 div{
   float: right;
   width: 100%;
   padding-top: 45%;
@@ -221,6 +202,31 @@ img#postgres {
 
 }
 
+/*RESUME FRONT-BACK END CIRCLES*/
+
+
+#feBubble{
+
+  width: 100%;
+}
+
+#beBubble{
+
+  width: 100%;
+}
+
+
+
+
+.circle-2{
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: white;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit- border-radius: 50%;
+  margin: 0 auto ;
+}
 
 h2#photo-title:hover,
 h2#photo-title:focus {
@@ -244,71 +250,134 @@ text-shadow: 3px 1px 2px black;
 
 
 
+@media only screen and (min-width: 100px) and (max-width: 494px){
 
 
+    #static {
+    font-family: 'Coda', 'Trebuchet MS', 'Tahoma';
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+  }
 
+  div #static h3 {
+    font-size: 1.15em;
+    margin-top: auto;
+    margin-bottom: 0%;
 
+  }
 
-/*}*/
-
-
-
-@media only screen and (min-width: 100px) and (max-width: 668px){
-
-    #mobile{
-   position: static;   
+   #mobile{
+   display: none; 
+/*   position: static;   
    font-size: 8px;
-  /* color: green;*/
-   text-align: center;
-
-    }
-
-  #fswd{
-  left:0%; 
-
-    }
-
-  #abel{
-  top:18%;
+   color: green;
+   text-align: center;*/
 
   }
 
 }
 
+@media only screen and (min-width: 495px) and (max-width: 668px){
+
+
+    #static {
+    font-family: 'Coda', 'Trebuchet MS', 'Tahoma';
+    text-align: center;
+    font-size: 2.25em;
+    text-transform: uppercase;
+    color: white;
+  }
+
+    div #static h3 {
+    font-size: 1.50em;
+    margin-top: auto;
+    margin-bottom: 0%;
+  }
+
+   #mobile{
+   display: none; 
+/*   position: static;   
+   font-size: 8px;
+   color: green;
+   text-align: center;*/
+
+  }
+
+}
+
+
+
 @media only screen and (min-width: 669px) and (max-width: 795px){
+
+    #static {
+    display: none;
+  }
 
   #mobile{
 
   font-size: 10px;
-/*display: block;/*
-/**color: red;*/
+  display: block;
+  color: white;
   text-align: center;
 
-
   }
 
-  #abel{
-    top:17%;
-}
-
-  #fswd{
-  left:15%; 
+  #fswd {
+    margin-right: 25%;
+    margin-top: 0%;
 
   }
-
+  
 }
 
 @media only screen and (min-width: 796px) and (max-width: 946px){
 
     #mobile{
-    text-align: center;  
     font-size: 12px;
-    /*display: block;
-/*    color: blue;*/
-    
-    left: 15%; 
+    display: block;
+    color: white;
 
   }
+
+    #static {
+    display: none;
+  } 
+
+  #fswd {
+    margin-left: -10%;
+
+  }
+
+}
+
+@media only screen and (min-width: 947px) and (max-width: 1200px){
+
+    #mobile{
+    font-size: 11.5px;
+    display: block;
+    color: white;
+
+  }
+
+    #static {
+    display: none;
+  } 
+
+   #fswd {
+    margin-left: -5%;
+
+  }
+
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 3000px){
+
+  #static {
+  display: none;
+  
+  } 
 
 }
 
