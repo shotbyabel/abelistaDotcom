@@ -31,8 +31,6 @@ section#slider img {
 
 }
 
-
-
 .nav > li > a {
   font-family: 'Coda', 'Trebuchet MS', 'Tahoma';
   text-transform: uppercase;
@@ -47,13 +45,13 @@ section#slider img {
 
 .nav>li>a:hover,
 .nav>li>a:focus {
+  cursor: pointer;
+  background-color: white;
+  text-shadow: 3px 1px 2px black;
+  -webkit-text-shadow: 3px 1px 2px black;
+  -moz-text-shadow: 3px 1px 2px black;
 
-background-color: white;
-text-shadow: 3px 1px 2px black;
--webkit-text-shadow: 3px 1px 2px black;
--moz-text-shadow: 3px 1px 2px black;
-
-}
+  }
 
 .my-titles {
 
@@ -67,6 +65,11 @@ text-shadow: 3px 1px 2px black;
 
 }
 
+#dev-font {
+   font-size: 3.25em;
+
+}
+
 #abel{
   font-size: 3.5em;
 }
@@ -75,7 +78,7 @@ text-shadow: 3px 1px 2px black;
   font-size: 2.50em;
 }
 
-p#mybio {
+p.myabouts {
   font-size: 1.25em;
 
 
@@ -147,13 +150,13 @@ text-align: center;
 }
 
 img#mean {
-  width: 80%;
+  width: 90%;
   line-height: 2em;
   margin-top: -6.5em;
 }
 
 img#rails {
-  width: 30%;
+  width: 25%;
   line-height: 1em;
   margin-top: -0.5em;
 }
@@ -216,12 +219,33 @@ img#postgres {
     margin-bottom: -1.25em;
     margin-left: 1.0em;
 
+}
 
+
+h2#photo-title:hover,
+h2#photo-title:focus {
+cursor: pointer;
+color: white; 
+text-shadow: 3px 1px 2px black;
+-webkit-text-shadow: 3px 1px 2px black;
+-moz-text-shadow: 3px 1px 2px black;
+
+}
+
+h2#sound-music:hover,
+h2#sound-music:focus {
+cursor: pointer;
+color: white; 
+text-shadow: 3px 1px 2px black;
+-webkit-text-shadow: 3px 1px 2px black;
+-moz-text-shadow: 3px 1px 2px black;
 
 }
 
 
-}
+
+
+
 
 
 

@@ -32,6 +32,27 @@ $('#fswd').animate({top:145},2000,'easeOutBounce');
 TweenMax.to('.fe-circle ', 1.75, {marginTop:150, ease:Bounce.easeOut});
 TweenMax.to('.be-circle ', 2.00, {marginTop:150, ease:Bounce.easeOut});
 
+//hide photo gallery
+
+// on page LOAD .hide gallery section.
+// on CLICK of photo-title id .show gallery section
+$(document).ready(function() {
+  $('#screenshots, #musics').hide();
+  $('#photo-title').click(function () {
+  $('#screenshots').toggle();
+  
+})
+
+  
+  $('#sound-music').click(function () {
+    $('#musics').toggle();
+  })
+
+});
+
+
+// #sound-music
+// #musics
 
 
 
