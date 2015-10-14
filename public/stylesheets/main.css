@@ -14,6 +14,7 @@ body > section {
 .voffset5 { margin-top: 50px; }
 .voffset15 { margin-top: 150px; }
 .voffset20 { margin-top: 200px; }
+.voffset-130 { margin-top: -130px; }
 
 section#slider img {
   margin: 0 auto;
@@ -126,27 +127,105 @@ text-align: center;
 /*FRONT END and BACK END CIRCLES*/
 
 .fe-circle{
+/*  width: 100%;
+  padding-bottom: 100%;
+  background-color: black;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit- border-radius: 50%;
+  margin: 0 auto ;*/
+}
+
+.fe-circle div{
+  float: left;
   width: 100%;
+  padding-top: 45%;
+  line-height: 1em;
+  margin-top: -0.5em;
+  text-align: center;
+
+}
+
+img#mean {
+  width: 80%;
+  line-height: 2em;
+  margin-top: -6.5em;
+}
+
+img#rails {
+  width: 30%;
+  line-height: 1em;
+  margin-top: -0.5em;
+}
+
+img#postgres {
+  width: 25%;
+  line-height: 1em;
+  margin-top: -0.5em;
+}
+
+.be-circle{
+/*  width: 100%;
   padding-bottom: 100%;
-  background-color: #006699;
+  background-color: black;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit- border-radius: 50%;
-  margin: 0 auto ;
+  margin: 0 auto ;*/
 }
 
-/*.be-circle{
-    width: 100%;
-  padding-bottom: 100%;
-  background-color: white;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit- border-radius: 50%;
-  margin: 0 auto ;
-}*/
+
+.be-circle div{
+  float: right;
+  width: 100%;
+  padding-top: 45%;
+  line-height: 1em;
+  margin-top: -0.5em;
+  text-align: center;
+
+}
+
+#frontEnd {
+    width: 70%;
+    line-height: 0em;
+    margin-top: -9.5em;
+}
+
+#angular {
+    width: 29%;
+    line-height: 1em;
+    margin-top: -1.05em;
+}
+
+#jquery {
+  width: 22%;
+  line-height: 1em;
+  margin-top: -0.5em;
+}
+
+#ionic {
+    width: 19%;
+    line-height: 1em;
+    margin-top: -2.00em;
+    margin-right: -2em;
+}
+
+#bootstrap {
+    width: 15%;
+    line-height: 1em;
+    margin-bottom: -1.25em;
+    margin-left: 1.0em;
+
 
 
 }
+
+
+}
+
+
+
+/*}*/
 
 
 

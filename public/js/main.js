@@ -29,7 +29,8 @@ $('#fswd').animate({top:145},2000,'easeOutBounce');
 
 // GSAP ANIMATIONS
 
-TweenMax.to('.fe-circle ', 1.5, {marginTop:100, ease:Bounce.easeOut});
+TweenMax.to('.fe-circle ', 1.75, {marginTop:150, ease:Bounce.easeOut});
+TweenMax.to('.be-circle ', 2.00, {marginTop:150, ease:Bounce.easeOut});
 
 
 
