@@ -14,7 +14,7 @@
 3. you can now use them as directives like on this form register button example
 
 ```html
-    <div class="form-group">
+<!--     <div class="form-group">
       <button class="btn btn-primary"
               ladda="submitting"
               data-style="expand-right"
@@ -23,7 +23,7 @@
           <span ng-show="!submitting">Register</span>        
       </button>
     </div>
-  </form >
+  </form > -->
 ```
 
 4. and you will ofcourse have to write the logic in that particlar angular **Controller** function 
@@ -52,7 +52,7 @@ and finish by adding error and success handler logic
 2. REQUIRE it on the forms.. (but read more about how to use it)
 
 ```html
-<form ng-submit="onSubmit()"
+<!-- <form ng-submit="onSubmit()"
         novalidate="novalidate">
     <div class="form-group" >
       <label for="name" class="control-label">Name</label >
@@ -69,7 +69,7 @@ and finish by adding error and success handler logic
              ng-model="formModel.email"
              id="email"
              required="required" >
-    </div >
+    </div > -->
 
     ```
     __________________
