@@ -9,3 +9,7 @@ I have generated an Express app and using Angular ui Router.
 This is a SPA! Bring your own towel!
 
 More updates coming soon. 
+
+
+//    "devel" : "nodemon bin/www",
+    "nodemon" : "nodemon bin/www"
