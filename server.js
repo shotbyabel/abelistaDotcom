@@ -1,4 +1,5 @@
 var express      = require('express'),
+    app          = express(),
     path         = require('path'),
     favicon      = require('serve-favicon'),
     logger       = require('morgan'),
@@ -27,7 +28,7 @@ mongoose.connect('mongodb://localhost/abelistaDotCom');
 
 // start running express, and save the configurations for the express
 // "app" with the variable `app`.
-var app       = express();    
+// var app       = express();    
 
 
 // view engine setup
