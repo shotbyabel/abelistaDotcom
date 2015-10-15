@@ -3,12 +3,9 @@
   'use strict';
 
 angular.module( 'abelApp', ['ui.router'])
-  .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider, $rootScope, $state, $stateParams){
+  .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
     $stateProvider
-      .state('/about', {
-        url:          '/about',
-        templateUrl:  'templates/about.html'
-      })
+
 
 .state('/aboutme', {
         url:          '/aboutme',
@@ -52,7 +49,7 @@ angular.module( 'abelApp', ['ui.router'])
       
       });
 
-      $urlRouterProvider.otherwise('/about'); 
+      $urlRouterProvider.otherwise('/aboutme'); 
     
   }])
 

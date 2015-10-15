@@ -60,9 +60,6 @@ section#slider img {
  text-transform: uppercase;
  color: #006699;
  font-size: 2.5em;
-/* text-shadow: 1px 1px 1px white;
- -webkit-text-shadow: 1px 1px 1px white;
- -moz-text-shadow: 1px 1px 1px white;*/
 
 }
 
@@ -105,14 +102,15 @@ text-align: center;
   top:60px;
 
 }
+
 #and{
-/*  display: none;*/
+
   position: absolute;
-/*  text-align: center;*/
   left:-1150px; 
   top:60px;
 
 }
+
 #abel{
   display: none;
   position: absolute;
@@ -159,6 +157,7 @@ img#postgres {
 }
 
 /*DEV STACKS ANIMATIONS*/
+
 .stacks2 div{
   float: right;
   width: 100%;
@@ -216,8 +215,6 @@ img#postgres {
 }
 
 
-
-
 .circle-2{
   width: 100%;
   padding-bottom: 100%;
@@ -248,7 +245,28 @@ text-shadow: 3px 1px 2px black;
 
 }
 
+footer{
+  border-style: solid;
+  border-width: 100%;
+  border-color: red;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
 
+
+}
+
+.copyright{
+
+ font-family: 'Coda', 'Trebuchet MS', 'Tahoma';
+ text-transform: uppercase;
+ color: green;
+ font-size: 1em;
+
+}
+
+/*MEDIA QUERIES*/
 
 @media only screen and (min-width: 100px) and (max-width: 494px){
 
@@ -270,11 +288,28 @@ text-shadow: 3px 1px 2px black;
 
    #mobile{
    display: none; 
-/*   position: static;   
-   font-size: 8px;
-   color: green;
-   text-align: center;*/
 
+
+  }
+
+}
+
+@media only screen and (min-width: 100px) and (max-width: 449px){
+
+
+    iframe {
+    width: 230px;
+    height: 129px;
+  }
+
+}
+
+@media only screen and (min-width: 450px) and (max-width: 590px){
+
+
+  iframe {
+    width: 410px;
+    height: 281px;
   }
 
 }
@@ -298,16 +333,11 @@ text-shadow: 3px 1px 2px black;
 
    #mobile{
    display: none; 
-/*   position: static;   
-   font-size: 8px;
-   color: green;
-   text-align: center;*/
+
 
   }
 
 }
-
-
 
 @media only screen and (min-width: 669px) and (max-width: 795px){
 
