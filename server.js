@@ -23,7 +23,13 @@ var routes    = require('./routes/index');
 //load mongoose and connect to our db
 
 var mongoose  = require('mongoose');
-mongoose.connect('mongodb://localhost/abelistaDotCom');
+// mongoose.connect('mongodb://localhost/abelistaDotCom');
+
+var mongoURI = 'mongodb://localhost/abelistaDotCom';
+if (process.env.NODE_ENV === 'production') {
+  mongoURI = process.env.MONGOLAB_URI;
+}
+mongoose.connect(mongoURI);
 
 
 // start running express, and save the configurations for the express
