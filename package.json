@@ -4,6 +4,7 @@
   "private": true,
   "main": "server.js",
   "scripts": {
+    "devel" : "nodemon bin/www",
     "start": "node ./bin/www"
 
   },
