@@ -9,33 +9,8 @@ var express      = require('express'),
 
     users        = require('./routes/users');
 
-
-
-//Mongo running check
-// require('net').connect(27017, 'locahost').on('error', function(){
-//   console.log("He's name is MongoDB live from port 27017");
-//   process.exit(0);
-
-// });
-
 //loading routes defined in /routes folder
 var routes    = require('./routes/index');
-
-//load mongoose and connect to our db
-
-// var mongoose  = require('mongoose');
-// // mongoose.connect('mongodb://localhost/abelistaDotCom');
-
-// var mongoURI = 'mongodb://localhost/abelistaDotCom';
-// if (process.env.NODE_ENV === 'production') {
-//   mongoURI = process.env.MONGOLAB_URI;
-// }
-// mongoose.connect(mongoURI);
-
-
-// start running express, and save the configurations for the express
-// "app" with the variable `app`.
-// var app       = express();    
 
 
 // view engine setup
