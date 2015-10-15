@@ -3,7 +3,7 @@ var express      = require('express'),
     app          = express(),
     path         = require('path'),
     favicon      = require('serve-favicon'),
-    logger       = require('morgan'),
+    // logger       = require('morgan'),
     cookieParser = require('cookie-parser'),
     bodyParser   = require('body-parser'),
 
@@ -46,7 +46,7 @@ app.set('view engine', 'ejs');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(logger('dev'));
+// app.use(logger('dev'));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
