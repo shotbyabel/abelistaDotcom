@@ -12,6 +12,10 @@ More updates coming soon.
 
 
 <!-- //    
+
+ after true
+
+ "main": "server.js",
  "start": "node ./bin/www",
 "devel" : "nodemon bin/www",
     "nodemon" : "nodemon bin/www" -->

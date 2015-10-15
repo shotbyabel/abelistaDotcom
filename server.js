@@ -10,8 +10,8 @@ var express      = require('express'),
 
 
 //Mongo running check
-require('net').connect(27017, 'locahost').on('error', function(){
-  console.log("He's name is MongoDB live from port 27017");
+// require('net').connect(27017, 'locahost').on('error', function(){
+//   console.log("He's name is MongoDB live from port 27017");
 //   process.exit(0);
 
 });
@@ -21,8 +21,8 @@ var routes    = require('./routes/index');
 
 //load mongoose and connect to our db
 
-var mongoose  = require('mongoose');
-mongoose.connect('mongodb://localhost/abelistaDotCom');
+// var mongoose  = require('mongoose');
+// mongoose.connect('mongodb://localhost/abelistaDotCom');
 
 
 // start running express, and save the configurations for the express
