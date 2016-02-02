@@ -1,9 +1,12 @@
 /*MY CUSTOM STYLES*/
 
-
 body {
 background-color: black;
-color: white;  
+color: white;
+min-height: 400px;
+margin-bottom: 100px;
+clear: both;
+
 }
 
 body > section {
@@ -33,7 +36,8 @@ section#slider img {
 }
 
 .nav > li > a {
-  font-family: 'Coda', 'Trebuchet MS', 'Tahoma';
+  font-family: 'Josefin Sans', 'Trebuchet MS', 'Tahoma';
+  /*font-family: 'Coda', 'Trebuchet MS', 'Tahoma';*/
   text-transform: uppercase;
   background-color: black;
   color: #ffffff;
@@ -55,8 +59,8 @@ section#slider img {
   }
 
 .my-titles {
-
- font-family: 'Coda', 'Trebuchet MS', 'Tahoma';
+font-family: 'Josefin Sans', 'Trebuchet MS', 'Tahoma';
+/* font-family: 'Coda', 'Trebuchet MS', 'Tahoma';*/
  text-transform: uppercase;
  color: #006699;
  font-size: 2.5em;
@@ -82,8 +86,12 @@ p.myabouts {
 
 }
 
+.myabouts-intro{
+  margin-top: 12%;
+}
+
 .aboutme-intro{
-font-family: 'Coda Caption', 'Trebuchet MS', 'Tahoma';
+font-family: 'Josefin Sans', 'Trebuchet MS', 'Tahoma';
 text-align: center;
 
 }
@@ -118,13 +126,20 @@ text-align: center;
   top:90px;
 
 }
+
 #fswd{
   display: none;
   position: absolute;
   left:30%; 
   top:-140px;
+  margin-left: 0%;
 
 }
+
+section.carousel.voffset15{
+margin-top: 5%; 
+}
+
 
 /*FRONT END and BACK END CIRCLES*/
 
@@ -246,16 +261,26 @@ text-shadow: 3px 1px 2px black;
 }
 
 footer{
+  position:fixed;
+  bottom: 0px;
   border-style: solid;
   border-width: 100%;
   border-color: red;
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100px;
   background-color: black;
-
-
+  z-index: 3;
 }
+
+/* IE 6 */
+/** html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}*/
+
+
 
 .copyright{
 
@@ -296,6 +321,14 @@ footer{
 
 @media only screen and (min-width: 100px) and (max-width: 449px){
 
+      #static {
+    font-family: 'Josefin Sans', 'Trebuchet MS', 'Tahoma';
+    text-align: center;
+    font-size: 2.25em;
+    text-transform: uppercase;
+    color: white;
+  }
+
 
     iframe {
     width: 230px;
@@ -316,9 +349,8 @@ footer{
 
 @media only screen and (min-width: 495px) and (max-width: 668px){
 
-
     #static {
-    font-family: 'Coda', 'Trebuchet MS', 'Tahoma';
+    font-family: 'Josefin Sans', 'Trebuchet MS', 'Tahoma';
     text-align: center;
     font-size: 2.25em;
     text-transform: uppercase;
@@ -336,6 +368,11 @@ footer{
 
 
   }
+
+   #fswd {
+    margin-left: 0%;
+
+  }  
 
 }
 
@@ -359,6 +396,10 @@ footer{
     margin-top: 0%;
 
   }
+
+.myabouts-intro{
+  margin-top: 22%;
+}   
   
 }
 
@@ -376,9 +417,13 @@ footer{
   } 
 
   #fswd {
-    margin-left: -10%;
+    margin-left: 3%;
 
   }
+
+.myabouts-intro{
+  margin-top: 20%;
+}  
 
 }
 
@@ -388,27 +433,43 @@ footer{
     font-size: 11.5px;
     display: block;
     color: white;
-
   }
-
-    #static {
-    display: none;
-  } 
-
-   #fswd {
-    margin-left: -5%;
-
-  }
-
-}
-
-@media only screen and (min-width: 1199px) and (max-width: 3000px){
 
   #static {
   display: none;
-  
   } 
 
+  #fswd {
+  margin-left: 5%;
+
+  }
+
+.myabouts-intro{
+  margin-top: 18%;
+}
+
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1500px){
+  #static {
+  display: none;
+  
+  }
+   #fswd {
+    margin-left: 5%;
+
+  }
+}
+
+@media only screen and (min-width: 1499px) and (max-width: 3000px){
+  #static {
+  display: none;
+  
+  }
+   #fswd {
+    margin-left: 7%;
+
+  }
 }
 
 
