@@ -25,7 +25,6 @@ section#slider img {
 }
 
 .navbar-default {
-  opacity: 0.85;
   box-shadow: none;
   background-color: transparent;
   border:none;
@@ -280,7 +279,6 @@ footer div.contact-me{
   overflow: hidden;
   z-index: 3;
   right: 0%;
-  opacity: 0.9;
 }
 
 .footer-row{
